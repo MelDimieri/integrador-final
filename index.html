@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="animaciones.css" />
+    <link
+      rel="shortcut icon"
+      href="./imagenes/paw-solid.svg"
+      type="image/x-icon"
+    />
+    <title>Puppy Paw</title>
+  </head>
+  <body>
+    <!--header-->
+    <header>
+      <img class="logo" src="./imagenes/paw-solid.svg" alt="logo" />
+      <nav id="navbar">
+        <label for="menu-toggle" class="menu-label">
+          <img src="./imagenes/menu.png" class="menu-icon" />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
+        <ul class="nav">
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#cards">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a class="login" href="./login.html">Login</a></li>
+          <li><a class="register" href="./register.html">Sign in</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!--hero-->
+      <section id="hero">
+        <div class="text-info">
+          <h1>Nos ocupamos del bienestar de <span>tu mascota!</span></h1>
+          <a href="#">Saber más</a>
+        </div>
+      </section>
+
+      <!--about-->
+      <section id="about">
+        <div class="about-text">
+          <h2>Sobre nosotros</h2>
+          <p>
+            ¡Llevamos muchos años preparándonos y amamos nuestro trabajo!
+            Brindamos un ambiente cálido y amigable para tus mascotas. Nuestro
+            equipo profesional se asegurará de que tu mascota reciba siempre el
+            más alto nivel de atención, ¡porque tratamos a todas las mascotas
+            como si fueran nuestras!
+          </p>
+        </div>
+      </section>
+
+      <!--cards-->
+      <section id="cards">
+        <h2>Nuestros Servicios</h2>
+        <div class="cards-container">
+          <div class="info-cards">
+            <img
+              class="icons"
+              src="./imagenes/pexels-anna-shvets-4588018.jpg"
+              alt="gromming"
+            />
+            <h3>Limpieza completa</h3>
+            <p>
+              ¡Tu mascota está en buenas manos! Dejá que el favorito de la
+              familia reciba la mejor atención en nuestro centro!
+            </p>
+          </div>
+          <div class="info-cards">
+            <img
+              class="icons"
+              src="./imagenes/pexels-cindy-shebley-16181460.jpg"
+              alt="bath"
+            />
+            <h3>Baño y secado</h3>
+            <p>
+              Utilizamos una amplia gama de shampoos para los diferentes tipos
+              de pelaje y razas. También ofrecemos baños médicos.
+            </p>
+          </div>
+          <div class="info-cards">
+            <img
+              class="icons"
+              src="./imagenes/groomingstyle.png"
+              alt="estilos"
+            />
+            <h3>Estilos</h3>
+            <p>
+              Nuestro equipo de estilistas estará encantado de hacer que tu
+              mascota se vea hermosa y felíz.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--contacto-->
+      <section id="contacto">
+        <div class="contact-text">
+          <h2>Contactanos</h2>
+          <p>Buenos Aires, Argentina</p>
+          <p>petgrooming@gmail.com</p>
+          <p>+54 9 2233445566</p>
+        </div>
+        <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6523007.361913492!2d-65.31708652583815!3d-37.032163535940484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95edbcb7595281d9%3A0x4ad309fcdcf0a144!2sProvincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1697059898135!5m2!1ses!2sar"
+            width="500"
+            height="300"
+            style="border: 0"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <!--footer-->
+    <footer>
+      <div>
+        <ul class="footer-list">
+          <li>
+            <a href="#">Developed by <span>Mel Dimieri</span></a>
+          </li>
+          <li><a href="#">Copyright @2023</a></li>
+          <li><a href="#">Politica de privacidad</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

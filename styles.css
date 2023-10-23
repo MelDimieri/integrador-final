@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800;900&display=swap");
+
+:root {
+  --bg-white: #fff;
+  --bg-grey: #e6e6e6;
+  --bg-dark: #222626;
+  --color-pink: #ff005c;
+  --color-rosa: #dea3bd;
+  --text-white: #fff;
+  --text-grey: #272727;
+
+  --text-h1: 26px;
+  --text-h2: 24px;
+  --text-h3: 20px;
+  --text-p: 14px;
+  --text-nav: 12px;
+  --text-hero: 32px;
+  --text-btn: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--bg-white);
+  width: 100%;
+}
+
+/*******HEADER*******/
+header {
+  height: 60px;
+  width: 100%;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--bg-grey);
+  background: linear-gradient(to top, #fff, #e6e6e6);
+  background: -webkit-linear-gradient(to top, #fff, #e6e6e6);
+  position: fixed;
+  z-index: 2;
+  top: 0;
+}
+
+/*******NAVBAR*******/
+#menu-toggle,
+.menu-label {
+  display: none;
+}
+
+#navbar {
+  font-size: var(--text-nav);
+  font-weight: 700;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+ul {
+  display: flex;
+  text-align: center;
+  list-style: none;
+  gap: 20px;
+}
+
+ul a {
+  text-decoration: none;
+  color: var(--text-grey);
+}
+
+ul a:hover {
+  color: var(--color-pink);
+}
+
+.nav li:first-child > a {
+  color: var(--color-pink);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 550px;
+  height: 60%;
+}
+
+/*******MAIN*******/
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+/*******HERO*******/
+#hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  background-image: url(./imagenes/pexels-torsten-dettlaff-59523.jpg);
+  background-size: cover;
+}
+
+.text-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 70%;
+  height: 250px;
+  gap: 30px;
+}
+
+.text-info h1 {
+  font-size: var(--text-hero);
+  font-weight: 900;
+  max-width: 50%;
+  color: var(--text-grey);
+}
+
+.text-info span {
+  font-size: var(--text-hero);
+  font-weight: 900;
+  max-width: 50%;
+  color: var(--text-white);
+  background: #414345;
+  background: linear-gradient(135deg, #f35a92 0%, #5d0369 100%);
+  background: linear-gradient(135deg, #f35a92 0%, #5d0369 100%);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.text-info a {
+  border-radius: 5px;
+  font-size: var(--text-btn);
+  font-weight: 700;
+  color: var(--text-white);
+  background-color: var(--color-pink);
+  text-decoration: none;
+  padding: 10px;
+  width: 120px;
+  text-align: center;
+  align-items: start;
+}
+
+.text-info a:hover {
+  color: var(--text-white);
+  background: #414345;
+  background: linear-gradient(135deg, #f35a92 0%, #5d0369 100%);
+  background: linear-gradient(135deg, #f35a92 0%, #5d0369 100%);
+}
+
+/*******ABOUT*******/
+#about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+  background-image: url(./imagenes/nose-4420535_1280.jpg);
+  background-size: cover;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 15px;
+  max-width: 70%;
+  color: var(--text-grey);
+  background-color: #e6e6e6a7;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.about-text h2 {
+  color: var(--text-grey);
+  font-size: var(--text-h2);
+  font-weight: 800;
+}
+
+.about-text p {
+  font-size: var(--text-p);
+  font-weight: 600;
+}
+
+/*******CARDS*******/
+#cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: var(--color-white);
+  gap: 40px;
+  width: 100%;
+  height: 700px;
+}
+
+#cards h2 {
+  font-size: var(--text-h2);
+  font-weight: 700;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  max-width: 90%;
+  height: 500px;
+  gap: 30px;
+}
+
+.info-cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  width: 90%;
+  height: 500px;
+  box-shadow: 0px 3px 4px 3px rgba(145, 139, 139, 0.61);
+  -webkit-box-shadow: 0px 3px 4px 3px rgba(145, 139, 139, 0.61);
+}
+
+.info-cards h3 {
+  font-size: var(--text-h3);
+  font-weight: 600;
+}
+
+.info-cards p {
+  font-size: var(--text-p);
+}
+
+.icons {
+  display: flex;
+  width: 70%;
+  border-radius: 10px;
+}
+
+/*******CONTACTO*******/
+#contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-image: url(./imagenes/puppiesss.jpg);
+  background-size: cover;
+  gap: 20px;
+  width: 100%;
+  height: 800px;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  width: 60%;
+  height: 200px;
+  color: var(--text-grey);
+}
+
+.contact-text h2 {
+  font-size: var(--text-h2);
+  font-weight: 700;
+}
+
+.contact-text p {
+  font-size: var(--text-p);
+  font-weight: 600;
+}
+
+.contact-text {
+  background-color: #e6e6e6a7;
+  border-radius: 10px;
+  width: 40%;
+}
+
+/*******FOOTER*******/
+footer .footer-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 50px;
+  font-size: var(--text-nav);
+  padding: 30px;
+  color: var(--text-grey);
+}
+
+.footer-list a:hover {
+  color: var(--color-pink);
+  font-weight: 600;
+}
+
+.footer-list span {
+  font-weight: 900;
+  color: var(--color-pink);
+}
+
+/*******LOGIN y REGISTER WEB*******/
+.logo__webs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-right: 800px;
+  height: 25px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-align: center;
+  justify-content: start;
+  background-image: url(./imagenes/perro-manito.jpg);
+  background-size: cover;
+  gap: 30px;
+  width: 100%;
+  height: 800px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 15px;
+  width: 60%;
+  height: 400px;
+}
+
+.form__h1 {
+  font-size: var(--text-h1);
+  color: var(--color-pink);
+  font-weight: 700;
+}
+
+.form__input {
+  display: flex;
+  border: 1px solid #0d0e0e;
+  border-radius: 10px;
+  font-size: var(--text-p);
+  font-weight: 500;
+  padding: 5px;
+}
+
+.btn {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: var(--color-pink);
+  color: var(--text-white);
+  border-radius: 10px;
+  font-size: var(--text-p);
+  font-weight: 600;
+  padding: 10px;
+  width: 80px;
+}
+
+.btn:hover {
+  border-radius: 10px;
+  color: var(--text-white);
+  background: #414345;
+  background: linear-gradient(135deg, #f35a92 0%, #5d0369 100%);
+  background: linear-gradient(135deg, #f35a92 0%, #5d0369 100%);
+}

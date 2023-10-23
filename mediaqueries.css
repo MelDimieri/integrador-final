@@ -1,0 +1,253 @@
+/*******TABLET*******/
+@media (max-width: 992px) {
+  main {
+    width: 100%;
+    background: #ada996;
+    background: -webkit-linear-gradient(
+      to right,
+      #eaeaea,
+      #dbdbdb,
+      #f2f2f2,
+      #ada996
+    );
+    background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+  }
+
+  /*******NAVBAR*******/
+  #navbar {
+    gap: 5px;
+  }
+
+  .nav {
+    position: absolute;
+    top: 60px;
+    left: 30%;
+    right: 30%;
+    max-width: 80%;
+    flex-direction: column;
+    background: linear-gradient(to top, #e0def7, #fff);
+    border: 1px solid #666666;
+    border-top: 0;
+    border-radius: 0px 0px 15px 15px;
+    padding: 25px 15px;
+    gap: 40px;
+    z-index: 2;
+    display: none;
+  }
+
+  .menu-label {
+    display: flex;
+    order: 2;
+    cursor: pointer;
+  }
+
+  .menu-label img {
+    height: 25px;
+    width: 25px;
+  }
+
+  #menu-toggle:checked + .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .logo {
+    padding-right: 220px;
+  }
+
+  .login,
+  .register {
+    color: var(--text-grey);
+    width: 100px;
+  }
+
+  .login:hover,
+  .register:hover {
+    background-color: var(--bg-white);
+    color: var(--color-pink);
+  }
+
+  /*******HERO*******/
+  #hero {
+    height: 450px;
+    background-image: none;
+  }
+
+  .text-info {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: var(--text-grey);
+  }
+
+  .text-info h1 {
+    font-weight: 700;
+  }
+
+  /*******ABOUT*******/
+  #about {
+    height: 500px;
+  }
+
+  .about-text {
+    width: 90%;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  /*******CARDS*******/
+  #cards {
+    height: 1500px;
+    gap: 50px;
+    color: var(--text-grey);
+  }
+
+  .cards-container {
+    flex-direction: column;
+    height: 1300px;
+  }
+
+  .info-cards {
+    width: 70%;
+    height: 600px;
+    color: var(--text-grey);
+    font-size: 22px;
+  }
+
+  #cards h2 {
+    font-size: 22px;
+  }
+
+  .info-cards h3 {
+    font-size: 18px;
+  }
+
+  .icons {
+    max-width: 50%;
+  }
+
+  /*******CONTACTO*******/
+  #contacto {
+    flex-wrap: wrap;
+    background: none;
+  }
+
+  .contact-text {
+    background: none;
+  }
+
+  .contact-text h2 {
+    font-size: 20px;
+    color: var(--text-grey);
+  }
+
+  .contact-text p {
+    color: var(--text-grey);
+  }
+
+  /*******FOOTER*******/
+  .footer .footer-list {
+    gap: 15px;
+  }
+
+  /*******LOGIN Y REGISTER*******/
+  .main {
+    background-image: none;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+  }
+
+  .logo__webs {
+    padding-right: 500px;
+  }
+}
+
+/****************************************************************/
+/*******MOBILE*******/
+@media (max-width: 576px) {
+  .logo {
+    padding-right: 250px;
+  }
+
+  /*******HERO*******/
+  #hero {
+    height: 400px;
+    background-image: none;
+  }
+
+  .text-info h1,
+  .text-info span {
+    font-size: 20px;
+  }
+
+  /*******ABOUT*******/
+  #about {
+    height: 450px;
+    padding: 10px;
+    background-image: none;
+  }
+
+  /*******CARDS*******/
+  #cards {
+    height: 1500px;
+    gap: 20px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .info-cards {
+    height: 450px;
+    padding: 15px;
+  }
+
+  .icons {
+    max-width: 80%;
+  }
+
+  /*******CONTACTO*******/
+  #contacto {
+    height: 500px;
+    gap: 25px;
+    background-image: none;
+  }
+
+  .contact-text {
+    width: 70%;
+    background: none;
+  }
+
+  iframe {
+    width: 300px;
+    height: 200px;
+  }
+
+  /*******FOOTER*******/
+
+  footer .footer-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /*******LOGIN Y REGISTER*******/
+  .main {
+    background-image: none;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+  }
+
+  .logo__webs {
+    padding-right: 200px;
+  }
+}
