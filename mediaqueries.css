@@ -1,16 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800;900&display=swap");
+
+:root {
+  --bg-white: #fff;
+  --bg-grey: #e6e6e6;
+  --bg-dark: #222626;
+  --color-pink: #ff005c;
+  --text-white: #fff;
+  --text-grey: #272727;
+
+  --text-h1: 26px;
+  --text-h2: 24px;
+  --text-h3: 20px;
+  --text-p: 14px;
+  --text-nav: 12px;
+  --text-hero: 32px;
+  --text-btn: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--bg-white);
+  width: 100%;
+}
+
 /*******TABLET*******/
 @media (max-width: 992px) {
   main {
     width: 100%;
-    background: #ada996;
-    background: -webkit-linear-gradient(
-      to right,
-      #eaeaea,
-      #dbdbdb,
-      #f2f2f2,
-      #ada996
-    );
-    background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
   }
 
   /*******NAVBAR*******/
@@ -25,7 +47,7 @@
     right: 30%;
     max-width: 80%;
     flex-direction: column;
-    background: linear-gradient(to top, #e0def7, #fff);
+    background: var(--bg-white);
     border: 1px solid #666666;
     border-top: 0;
     border-radius: 0px 0px 15px 15px;
@@ -73,6 +95,7 @@
   #hero {
     height: 450px;
     background-image: none;
+    background-color: var(--bg-grey);
   }
 
   .text-info {
@@ -105,7 +128,7 @@
 
   /*******CARDS*******/
   #cards {
-    height: 1500px;
+    height: 1550px;
     gap: 50px;
     color: var(--text-grey);
   }
@@ -137,7 +160,9 @@
   /*******CONTACTO*******/
   #contacto {
     flex-wrap: wrap;
-    background: none;
+    background-image: none;
+    background-color: var(--bg-grey);
+    height: 650px;
   }
 
   .contact-text {
@@ -164,6 +189,7 @@
     flex-direction: column;
     justify-content: center;
     height: 600px;
+    background-color: var(--bg-grey);
   }
 
   .logo__webs {
@@ -175,7 +201,7 @@
 /*******MOBILE*******/
 @media (max-width: 576px) {
   .logo {
-    padding-right: 250px;
+    padding-right: 200px;
   }
 
   /*******HERO*******/
@@ -191,9 +217,8 @@
 
   /*******ABOUT*******/
   #about {
-    height: 450px;
-    padding: 10px;
-    background-image: none;
+    height: 550px;
+    background-position: center;
   }
 
   /*******CARDS*******/
@@ -218,8 +243,7 @@
   /*******CONTACTO*******/
   #contacto {
     height: 500px;
-    gap: 25px;
-    background-image: none;
+    gap: 15px;
   }
 
   .contact-text {
