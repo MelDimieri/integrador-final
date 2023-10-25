@@ -5,7 +5,6 @@
   --bg-grey: #e6e6e6;
   --bg-dark: #222626;
   --color-pink: #ff005c;
-  --color-rosa: #dea3bd;
   --text-white: #fff;
   --text-grey: #272727;
 
@@ -206,10 +205,10 @@ main {
   align-items: center;
   text-align: center;
   justify-content: center;
-  color: var(--color-white);
+  color: var(--text-grey);
   gap: 40px;
   width: 100%;
-  height: 700px;
+  height: 800px;
 }
 
 #cards h2 {
@@ -263,15 +262,16 @@ main {
 /*******CONTACTO*******/
 #contacto {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   align-content: center;
   justify-content: center;
-  background-image: url(./imagenes/puppiesss.jpg);
+  background-image: url(./imagenes/fatty-corgi-Zn5chZcnFRA-unsplash.jpg);
   background-size: cover;
-  gap: 20px;
+  background-position: right;
+  gap: 5px;
   width: 100%;
-  height: 800px;
+  height: 650px;
 }
 
 .contact-text {
@@ -282,7 +282,7 @@ main {
   text-align: center;
   justify-content: center;
   gap: 10px;
-  width: 60%;
+  width: 40%;
   height: 200px;
   color: var(--text-grey);
 }
@@ -293,14 +293,14 @@ main {
 }
 
 .contact-text p {
-  font-size: var(--text-p);
+  font-size: var(--text-btn);
   font-weight: 600;
 }
 
-.contact-text {
-  background-color: #e6e6e6a7;
-  border-radius: 10px;
-  width: 40%;
+.mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*******FOOTER*******/
@@ -327,15 +327,6 @@ footer .footer-list {
 }
 
 /*******LOGIN y REGISTER WEB*******/
-.logo__webs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding-right: 800px;
-  height: 25px;
-}
-
 .main {
   display: flex;
   flex-direction: row;
@@ -347,7 +338,16 @@ footer .footer-list {
   background-size: cover;
   gap: 30px;
   width: 100%;
-  height: 800px;
+  height: 650px;
+}
+
+.logo__webs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-right: 800px;
+  height: 25px;
 }
 
 .form {
