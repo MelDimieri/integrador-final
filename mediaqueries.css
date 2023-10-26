@@ -91,6 +91,10 @@ body {
     color: var(--color-pink);
   }
 
+  header {
+    width: 100%;
+  }
+
   /*******HERO*******/
   #hero {
     height: 450px;
@@ -194,6 +198,10 @@ body {
 /****************************************************************/
 /*******MOBILE*******/
 @media (max-width: 576px) {
+  main {
+    width: 100%;
+  }
+
   .logo {
     padding-right: 200px;
   }

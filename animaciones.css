@@ -17,15 +17,6 @@
   }
 }
 
-@keyframes slide-right {
-  from {
-    transform: translateX(80rem);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
 @keyframes fade {
   from {
     opacity: 0;
@@ -45,6 +36,7 @@
 }
 
 /*******animaciones*******/
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 12rem;
@@ -52,12 +44,12 @@ html {
 
 /*******hero*******/
 .text-info h1 {
-  animation: slide-left 0.8s ease-in;
+  animation: slide-left 1s ease-in;
 }
 
 /*******about*******/
 .about-text {
-  animation: fade 0.8s ease-in forwards, slide-right 0.9s linear;
+  animation: fade 0.8s ease-in forwards, slide-up 0.9s linear;
   animation-delay: 0.2s;
 }
 
