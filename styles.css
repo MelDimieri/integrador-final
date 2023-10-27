@@ -113,8 +113,6 @@ main {
   display: flex;
   flex-direction: column;
   text-align: left;
-  align-items: center;
-  justify-content: center;
   width: 70%;
   height: 250px;
   gap: 30px;
