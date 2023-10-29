@@ -399,8 +399,7 @@ footer .footer-list {
   display: flex;
   text-align: center;
   align-items: center;
-  text-decoration: none;
   color: var(--color-pink);
   font-size: var(--text-btn);
-  font-weight: 900;
+  font-weight: 700;
 }
